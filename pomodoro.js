@@ -32,9 +32,9 @@ var workMS = workTime * 60000;
 var breakMS = breakTime * 60000;
 
 window.onload = function onLoad() {
-    var circle = new ProgressBar.Circle('#progress', {
+    var circle = new ProgressBar.Circle('.progress', {
         color: 'darkred',
-        fill: 'red',
+        fill: 'rgb(255, 57, 25)',
         strokeWidth: 2,
         trailWidth: 1
 });
@@ -42,7 +42,6 @@ window.onload = function onLoad() {
 $(".startWork").on("click", function() {
   circle.animate(1, {
     duration: 1,
-    easing: 'easeInOut'
   }, function() {
     circle.animate(0, {
       duration: workMS
@@ -55,10 +54,9 @@ $(".startWork").on("click", function() {
 $(".startBreak").on("click", function() {
   circle.animate(1, {
     duration: 1,
-    easing: 'easeInOut'
   }, function() {
     circle.animate(0, {
-      duration: breakMS
+      duration: breakMS,
     }, function() {
       document.title = "Break is over!";
       alert("Break is over!");

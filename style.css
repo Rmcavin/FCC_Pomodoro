@@ -1,12 +1,17 @@
 body {
-  background-color: white;
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-radial-gradient(white, rgb(255, 190, 179), rgb(255, 99, 71)); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(white, rgb(255, 190, 179), rgb(255, 99, 71)); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(white, rgb(255, 190, 179), rgb(255, 99, 71)); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(white, rgb(255, 190, 179), rgb(255, 99, 71)); /* Standard syntax */
 }
 
 .Title {
+  margin-top: 60px;
   font-family: Lobster, fantasy;
-  font-size: 56;
+  font-size: 72;
   text-align: center;
-  color: red;
+  color: rgb(255, 57, 25);
   text-shadow: 2px 1px 0px black;
 }
 
@@ -38,31 +43,24 @@ a {
   height: auto;
   margin: auto;
   margin-top: 30px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 
 .setTime {
   font-family: arial;
-  font-size: 28;
+  font-size: 42;
   height: auto;
   margin-top: 30px;
   padding: 20px;
-  background-color: white;
-  box-shadow: 5px 5px 10px darkgrey;
   text-align: center;
   flex: 1;
 }
 .setBreak {
   font-family: arial;
-  font-size: 28;
+  font-size: 42;
   height: auto;
   margin-left: 15px;
   margin-top: 30px;
   padding: 20px;
-  background-color: white;
-  box-shadow: 5px 5px 10px darkgrey;
   text-align: center;
   flex: 1;
 }
@@ -70,47 +68,46 @@ a {
 .upWork {
   width: 0;
   height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-bottom: 15px solid black;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid black;
   margin: auto;
 }
 
 .upBreak {
   width: 0;
   height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-bottom: 15px solid black;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid black;
   margin: auto;
 }
 
 .downWork {
   width: 0;
   height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-top: 15px solid black;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid black;
   margin: auto;
-}
-
-.startWork {
-  padding: 2px;
-  margin: 10px;
-}
-
-.startBreak {
-  padding: 2px;
-  margin: 10px;
 }
 
 .downBreak {
   width: 0;
   height: 0;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-top: 15px solid black;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid black;
   margin: auto;
+}
+
+button {
+  padding: 6px;
+  margin: 20px;
+  font-size: 30;
+  background-color: rgb(255, 99, 71);
+  border-radius: 10px;
+  border: 2px solid darkred;
 }
 
 .workTime {
@@ -124,11 +121,12 @@ a {
 }
 
 .progress {
-            height: 400px;
-            width: 400px;
+            height: 50%;
+            width: auto;
             margin: auto;
+            margin-bottom: 30px;
+            margin-top: 10px;
             }
             .progress > svg {
                 height: 100%;
-                display: block;
             }
