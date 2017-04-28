@@ -1,9 +1,10 @@
 body {
-    background: white; /* For browsers that do not support gradients */
+    white; /* For browsers that do not support gradients */
     background: -webkit-radial-gradient(white, rgb(255, 190, 179), rgb(255, 99, 71)); /* Safari 5.1 to 6.0 */
     background: -o-radial-gradient(white, rgb(255, 190, 179), rgb(255, 99, 71)); /* For Opera 11.6 to 12.0 */
     background: -moz-radial-gradient(white, rgb(255, 190, 179), rgb(255, 99, 71)); /* For Firefox 3.6 to 15 */
     background: radial-gradient(white, rgb(255, 190, 179), rgb(255, 99, 71)); /* Standard syntax */
+    /* */
 }
 
 .Title {
@@ -46,7 +47,7 @@ a {
 }
 
 .setTime {
-  font-family: arial;
+  font-family: monospace;
   font-size: 42;
   height: auto;
   margin-top: 30px;
@@ -55,7 +56,7 @@ a {
   flex: 1;
 }
 .setBreak {
-  font-family: arial;
+  font-family: monospace;
   font-size: 42;
   height: auto;
   margin-left: 15px;
@@ -108,6 +109,7 @@ button {
   background-color: rgb(255, 99, 71);
   border-radius: 10px;
   border: 2px solid darkred;
+  font-family: arial;
 }
 
 .workTime {
@@ -126,6 +128,8 @@ button {
             margin: auto;
             margin-bottom: 30px;
             margin-top: 10px;
+            font-size: 48;
+            font-family: monospace;
             }
             .progress > svg {
                 height: 100%;

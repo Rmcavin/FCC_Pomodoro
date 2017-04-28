@@ -1,7 +1,7 @@
 
 
-var workTime = .1;
-var breakTime = .1;
+var workTime = 25;
+var breakTime = 5;
 
 $(document).ready(function() {
   //Adjust Work Time
@@ -28,18 +28,47 @@ $(document).ready(function() {
   });
 });
 
+
+
+
 var workMS = workTime * 60000;
 var breakMS = breakTime * 60000;
+var seconds = 60;
+var time;
+
+
+var workTimer = workTime - 1;
+var breakTimer = breakTime - 1;
+
 
 window.onload = function onLoad() {
     var circle = new ProgressBar.Circle('.progress', {
-        color: 'darkred',
-        fill: 'rgb(255, 57, 25)',
+        color: 'rgb(255, 57, 25)',
+        fill: 'rgba(255, 57, 25, 0.3)',
         strokeWidth: 2,
         trailWidth: 1
 });
-
 $(".startWork").on("click", function() {
+
+  setInterval(function() {
+    if (seconds === 0) {
+      seconds = 59;
+      workTimer = workTimer - 1;
+    }
+    else {
+      seconds = seconds - 1;
+    }
+      console.log(seconds);
+
+    if (seconds < 10) {
+      time = workTimer + ":" + "0" + seconds;
+    }
+    if (seconds >= 10) {
+      time = workTimer + ":" + seconds;
+    }
+    circle.setText(time);
+  }, 1000);
+
   circle.animate(1, {
     duration: 1,
   }, function() {
@@ -50,8 +79,10 @@ $(".startWork").on("click", function() {
     alert("Work is over!");
 });
 });
+});
 
 $(".startBreak").on("click", function() {
+  circle.setText("Hello!");
   circle.animate(1, {
     duration: 1,
   }, function() {
@@ -61,7 +92,6 @@ $(".startBreak").on("click", function() {
       document.title = "Break is over!";
       alert("Break is over!");
     });
-});
 });
 });
 };
