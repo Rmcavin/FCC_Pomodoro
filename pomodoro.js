@@ -1,7 +1,7 @@
 
 
-var workTime = 1;
-var breakTime = 1;
+var workTime = 25;
+var breakTime = 5;
 
 $(document).ready(function() {
   //Adjust Work Time
