@@ -5,6 +5,8 @@ body {
     background: -moz-radial-gradient(white, rgb(255, 190, 179), rgb(255, 99, 71)); /* For Firefox 3.6 to 15 */
     background: radial-gradient(white, rgb(255, 190, 179), rgb(255, 99, 71)); /* Standard syntax */
     /* */
+    height: 100%;
+    overflow: hidden;
 }
 
 .Title {
