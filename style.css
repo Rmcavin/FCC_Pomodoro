@@ -109,7 +109,7 @@ button {
   background-color: rgb(255, 99, 71);
   border-radius: 10px;
   border: 2px solid darkred;
-  font-family: arial;
+  font-family: monospace;
 }
 
 .workTime {
