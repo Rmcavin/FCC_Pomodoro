@@ -5,8 +5,6 @@ body {
     background: -moz-radial-gradient(white, rgb(255, 190, 179), rgb(255, 99, 71)); /* For Firefox 3.6 to 15 */
     background: radial-gradient(white, rgb(255, 190, 179), rgb(255, 99, 71)); /* Standard syntax */
     /* */
-    height: 100%;
-    overflow: hidden;
 }
 
 .Title {
@@ -43,8 +41,6 @@ a {
 }
 
 .box2 {
-  width: 80%;
-  height: auto;
   margin: auto;
   margin-top: 30px;
 }
@@ -126,8 +122,8 @@ button {
 }
 
 .progress {
-            height: 45%;
-            width: auto;
+            height: 400px;
+            width: 400px;
             margin: auto;
             margin-bottom: 10px;
             margin-top: 10px;
