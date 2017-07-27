@@ -5,7 +5,7 @@ A pomodoro productivity web app for Free Code Camp.
 ## Live demo
 [Pomodoro Demo](https://rmcavin.github.io/FCC_Pomodoro/)
 
-##Free Code Camp Project Link
+## Free Code Camp Project Link
 [Free Code Camp Project Description](https://www.freecodecamp.org/challenges/build-a-pomodoro-clock)
 
 ## Project Requirements
