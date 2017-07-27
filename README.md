@@ -2,6 +2,8 @@
 # FCC_Pomodoro
 A pomodoro productivity web app for Free Code Camp.
 
+![Pomodoro Timer](pomoThumbnail.png "Pomodoro Timer")
+
 ## Live demo
 [Pomodoro Demo](https://rmcavin.github.io/FCC_Pomodoro/)
 
